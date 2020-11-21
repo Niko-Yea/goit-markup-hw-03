@@ -22,14 +22,17 @@
     --logo-color: #000000;
     --second-bg: #2F303A;
     --main-bg: #ffffff;
-    --any-bg: #f5f5f5;
+    --any-bg: #F5F4FA;
     --button-bg: #F5F4FA;
 }
-
 
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
+}
+
+img{
+    display: block;
 }
 
 .link{
@@ -50,26 +53,49 @@ h6,
 ul,
 p{
     margin: 0;
+    padding: 0;
 }
 
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
-    
+
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
     
     outline: 2px solid red;
 }
 
 /* header footer */
-.header{
+.header .container{
+    display: flex;
+    align-items: center;  
+
     background-color: var(--main-bg);
 }
 
+.nav{
+    display: flex;
+    align-items: center;
+}
+
 .navlist{
+    display: flex;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+}
+
+.navlist-item:not(:first-child){
+    margin-left: 50px;
+}
+.navlist-item-link{
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .navlist-item-link:hover,
@@ -85,13 +111,19 @@ p{
     font-size: 26px;
     line-height: 1.2;
 }
+.logo > span{
+    color: var(--accent);
+}
 
 .logo-header{
     color: var(--logo-color);
+    margin-right: 93px;
 }
+.logo-footer{
+    display: block;
+    margin-bottom: 20px;
 
-.logo > span{
-    color: var(--accent);
+    color: var(--white-text);
 }
 
 .contacts{
@@ -101,15 +133,24 @@ p{
 }
 
 .contacts-header{
+    margin-left: auto;
+    display: flex;
+}
+.contacts-header > .contacts-item:not(:first-child){
+    margin-left: 50px;
+}
+.contacts-header a{
     color: var(--secondary-text-color);
 }
 
-.select-page{
-    color: var(--accent)
+.footer{
+    min-height: 252px;
+
+    background-color: var(--second-bg);
 }
 
-.footer{
-    background-color: var(--second-bg);
+.footer .container{
+    padding-top: 60px;
 }
 
 .address{
@@ -121,25 +162,38 @@ p{
 
 .footer-address{
     color: var(--white-text);
+    margin-bottom: 9px;
 }
 
-.contacts-footer{
+.contacts-footer  a{
     color: var(--footer-alfa);
 }
 
-.logo-footer{
-    color: var(--white-text);
+.contacts-footer .contacts-item:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.select-page{
+    color: var(--accent)
 }
 
 
+
 /* maininfo index.html */
+/* hero */
 .hero{
     background-color: var(--second-bg);
     text-align: center;
 }
 
-.hero > .title{
+.hero .container{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero .title-hero{
     margin-bottom: 30px;
+
     color: var(--white-text);
     text-transform: uppercase;
     font-weight: 900;
@@ -162,12 +216,28 @@ p{
     text-align: center;
 }
 
-.properties-item > h3{
+/* properties */
+.properties .container{
+    padding-top: 94px;
+}
+.properties-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.properties-item{
+    width: calc((100% - 90px) / 4);
+}
+.properties-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.properties-item > .properties-title{
+    margin-bottom: 10px;
+
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-
 }
 
 .properties-item > p{
@@ -177,36 +247,78 @@ p{
     line-height: 1.71;
 }
 
-.whatwedo > h2{
+/* whatwedo */
+.whatwedo .container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.whatwedo .title{
+    margin-bottom: 50px;
+
     text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
 }
 
+.whatwedo-list{
+    display: flex;
+
+}
+
+.whatwedo-item:not(:first-child){
+    margin-left: 30px;
+}
+
+/* ourteam */
 .ourteam{
     background-color: var(--any-bg);
 }
 
-.ourteam-item{
-    background-color: var(--main-bg);
+.ourteam .container{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.ourteam > h2{
+.ourteam-item{
+    background-color: var(--main-bg);
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
+}
+
+.ourteam .title{
+    margin-bottom: 50px;
+
     text-align: center;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.16;
 }
 
-.ourteam-item > h3{
+.ourteam-list{
+    display: flex;
+
+}
+.ourteam-item:not(:first-child){
+    margin-left: 30px;
+}
+
+.ourteam-item > .team-title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
 }
 
-.ourteam-item > p{
+.ourteam-item > .position{
+    margin-bottom: 30px;
     text-align: center;
     color: var(--secondary-text-color);
     font-weight: 400;
