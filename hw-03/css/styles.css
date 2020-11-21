@@ -1,0 +1,247 @@
+/*
+основной текст - #212121
+вторичный текст - #757575
+акцент - #2196F3
+текст лого - #000000
+
+доп фон - #F5F4FA
+фон хедер, футер - #2F303A
+фон кнопок - #F5F4FA
+
+текст футера:
+белый - #FFFFFF
+белый + альфа - rgba(255, 255, 255, 0.6)
+*/
+
+:root{
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent: #2196f3;
+    --white-text: #ffffff;
+    --footer-alfa: rgba(255, 255, 255, 0.6);
+    --logo-color: #000000;
+    --second-bg: #2F303A;
+    --main-bg: #ffffff;
+    --any-bg: #f5f5f5;
+    --button-bg: #F5F4FA;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+}
+
+.link{
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.list-item{
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p{
+    margin: 0;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    
+    
+    outline: 2px solid red;
+}
+
+/* header footer */
+.header{
+    background-color: var(--main-bg);
+}
+
+.navlist{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.navlist-item-link:hover,
+.navlist-item-link:focus,
+.contacts-link:hover,
+.contacts-link:focus{
+    color: var(--accent);
+}
+
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo-header{
+    color: var(--logo-color);
+}
+
+.logo > span{
+    color: var(--accent);
+}
+
+.contacts{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.contacts-header{
+    color: var(--secondary-text-color);
+}
+
+.select-page{
+    color: var(--accent)
+}
+
+.footer{
+    background-color: var(--second-bg);
+}
+
+.address{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer-address{
+    color: var(--white-text);
+}
+
+.contacts-footer{
+    color: var(--footer-alfa);
+}
+
+.logo-footer{
+    color: var(--white-text);
+}
+
+
+/* maininfo index.html */
+.hero{
+    background-color: var(--second-bg);
+    text-align: center;
+}
+
+.hero > .title{
+    margin-bottom: 30px;
+    color: var(--white-text);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+}
+
+.button-hero{
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 34px;
+    min-width: 200px;
+    min-height: 50px;
+
+    color: var(--white-text);
+    background-color: var(--accent);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+}
+
+.properties-item > h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+}
+
+.properties-item > p{
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.whatwedo > h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+.ourteam{
+    background-color: var(--any-bg);
+}
+
+.ourteam-item{
+    background-color: var(--main-bg);
+}
+
+.ourteam > h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+}
+
+.ourteam-item > h3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.ourteam-item > p{
+    text-align: center;
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* portfolio.html */
+.filters-button{
+    background-color: var(--button-bg);
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+.filters-button:hover,
+.filters-button:focus{
+    background-color: var(--accent);
+    color: var(--white-text);
+}
+.portfolio-list-link{
+    color: var(--primary-text-color);
+}
+.portfolio-list-link > .portfolio-list-desc{
+    color: var(--secondary-text-color);
+}
+.portfolio-list-link > h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+.portfolio-list-link > p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    }
