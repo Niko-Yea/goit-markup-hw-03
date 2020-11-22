@@ -65,7 +65,7 @@ p{
     padding-right: 15px;
 
     
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 /* header footer */
@@ -380,8 +380,6 @@ p{
     margin-top: 4px;
 }
 .portfolio-list-link  .portfolio-list-title{
-    margin-top: 20px;
-
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -391,11 +389,23 @@ p{
     font-size: 16px;
     line-height: 1.87;
     }
-
-.portfolio-list .list-item{
-    width: 370px;
-}
 .list-item .border{
     border: 1px solid #eeeeee;
     border-top: none;
+    padding-top: 20px;
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-list .list-item{
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.portfolio-list .list-item:nth-child(3n){
+    margin-right: 0;
+}
+.portfolio-list .list-item:nth-last-child(-n+3){
+    margin-bottom: 0;
 }
