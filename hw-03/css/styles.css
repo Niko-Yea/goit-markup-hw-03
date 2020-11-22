@@ -324,8 +324,14 @@ p{
     margin-left: 30px;
 }
 
-.ourteam-item > .team-title{
-    margin-top: 30px;
+.team-info{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ourteam-item .team-title{
     margin-bottom: 10px;
 
     text-align: center;
@@ -334,8 +340,7 @@ p{
     line-height: 1.18;
 }
 
-.ourteam-item > .position{
-    margin-bottom: 30px;
+.ourteam-item .position{
     text-align: center;
     color: var(--secondary-text-color);
     font-weight: 400;
@@ -400,25 +405,25 @@ p{
 }
 .portfolio-list-link .portfolio-list-desc{
     margin-top: 4px;
-    margin-left: 24px;
-    margin-bottom: 20px;
-
+    
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
 }
 .portfolio-list-link  .portfolio-list-title{
-    margin-left: 24px;
-
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
 }
+
 .list-item .border{
     border: 1px solid #eeeeee;
     border-top: none;
     padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 .portfolio-list{
     display: flex;
