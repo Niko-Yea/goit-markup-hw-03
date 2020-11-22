@@ -376,19 +376,21 @@ p{
     color: var(--primary-text-color);
 }
 .portfolio-list-link .portfolio-list-desc{
-    color: var(--secondary-text-color);
     margin-top: 4px;
+    margin-left: 24px;
+
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
 }
 .portfolio-list-link  .portfolio-list-title{
+    margin-left: 24px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
 }
-.portfolio-list-link > p{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.87;
-    }
 .list-item .border{
     border: 1px solid #eeeeee;
     border-top: none;
