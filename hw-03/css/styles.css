@@ -329,6 +329,12 @@ p{
 
 /* ---------------------------------------------------------------------------- */
 /* portfolio.html */
+.portfolio .container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* filters */
 .filters-button{
     background-color: var(--button-bg);
     color: var(--primary-text-color);
@@ -341,13 +347,41 @@ p{
     background-color: var(--accent);
     color: var(--white-text);
 }
+.filters{
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+    /* outline: 2px solid tomato; */
+}
+.filters .list-item:not(:last-child){
+    margin-right: 8px;
+}
+.filters-button{
+    background-color: var(--any-bg);
+
+    border: none;
+    border-radius: 4px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+
+/* portfolio */
 .portfolio-list-link{
     color: var(--primary-text-color);
 }
-.portfolio-list-link > .portfolio-list-desc{
+.portfolio-list-link .portfolio-list-desc{
     color: var(--secondary-text-color);
+    margin-top: 4px;
 }
-.portfolio-list-link > h3{
+.portfolio-list-link  .portfolio-list-title{
+    margin-top: 20px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -357,3 +391,11 @@ p{
     font-size: 16px;
     line-height: 1.87;
     }
+
+.portfolio-list .list-item{
+    width: 370px;
+}
+.list-item .border{
+    border: 1px solid #eeeeee;
+    border-top: none;
+}
