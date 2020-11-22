@@ -29,6 +29,8 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
 img{
@@ -73,8 +75,7 @@ p{
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ececec;
-
-    background-color: var(--main-bg);
+    background-color: var(--main-bg);   
 }
 
 .nav{
@@ -87,7 +88,8 @@ p{
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .navlist-item:not(:first-child){
@@ -97,6 +99,11 @@ p{
     display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .navlist-item-link:hover,
@@ -111,6 +118,7 @@ p{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 .logo > span{
     color: var(--accent);
@@ -131,6 +139,7 @@ p{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .contacts-header{
@@ -140,7 +149,7 @@ p{
 .contacts-header > .contacts-item:not(:first-child){
     margin-left: 50px;
 }
-.contacts-header a{
+.contacts-header .contacts-link{
     color: var(--secondary-text-color);
 }
 
@@ -202,6 +211,7 @@ p{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 0.06em;
 }
 
 .button-hero{
@@ -217,7 +227,7 @@ p{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 /* properties */
@@ -242,6 +252,7 @@ p{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
 }
 
 .properties-item > p{
@@ -249,6 +260,7 @@ p{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 /* whatwedo */
@@ -263,6 +275,7 @@ p{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+    letter-spacing: 0.03em;
 }
 
 .whatwedo-list{
@@ -297,9 +310,10 @@ p{
     margin-bottom: 50px;
 
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+    letter-spacing: 0.03em;
 }
 
 .ourteam-list{
